@@ -152,6 +152,7 @@ def heuristic_solve():
         if (len(ingredient_union)) < len(best_ingredient_union) and len(eevee_list_set) > 3:
             best_ingredient_union = ingredient_union
             best_eevee_set = eevee_list_set
+    print('Shopping List')
     print([ingredient_map[ing] for ing in best_ingredient_union])
     eevees = find_eevee(best_eevee_set)
     for e in eevees:
@@ -167,3 +168,4 @@ for i, x in enumerate(evvee_graph.values()):
 
 
 
+heuristic_solve()
